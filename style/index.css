@@ -1,0 +1,6 @@
+@import url(./abstract/fonts.css);
+@import url(./utilities/reset.css);
+
+:root {
+  font-family: 'Inter';
+}
