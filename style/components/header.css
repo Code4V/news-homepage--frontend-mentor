@@ -1,0 +1,50 @@
+@import url(./../abstract/colors.css);
+
+.header {
+  flex: 0 1 1380px;
+}
+
+.header__banner {
+  margin-block-end: 1.5rem;
+}
+
+.header__container {
+  display: flex;
+  padding: 1rem 0 0 0;
+}
+
+.header__title {
+  font-size: 3.75rem;
+  font-weight: 800;
+
+  flex: 1 0 50%;
+}
+
+.header__container-inner {
+  display: flex;
+  flex-flow: column wrap;
+
+  padding-inline: 1rem;
+}
+
+.header__content {
+  padding-block: 0 ;
+  line-height: 1.5rem;
+}
+
+.header__button {
+  all: unset;
+  background-color: var(--red);
+
+  color: var(--white);
+
+  text-align: center;
+
+  padding-block: 1.1rem;
+
+  text-transform: uppercase;
+  font-weight: 600;
+  letter-spacing: .25rem;
+  margin-block-start: auto;
+  width: 12.25rem;
+}

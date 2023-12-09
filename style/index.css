@@ -1,6 +1,17 @@
 @import url(./abstract/fonts.css);
 @import url(./utilities/reset.css);
 
+@import url(./components/navigation.css);
+@import url(./components/main.css);
+@import url(./components/header.css);
+@import url(./components/news.css);
+@import url(./components/sidebar.css);
+
 :root {
   font-family: 'Inter';
+  font-size: 15px;
+}
+
+body {
+  padding: 6rem 11rem;
 }

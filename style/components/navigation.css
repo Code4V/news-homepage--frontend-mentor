@@ -1,0 +1,20 @@
+.navigation {
+  display: flex;
+  width: 100%;
+
+  margin-block-end: 3.5rem;
+}
+
+.navigation__logo {
+  width: fit-content;
+}
+
+.navigation__nav {
+  display: flex;
+  align-items: center;
+  font-size: 1.05rem;
+  
+  gap: 2.65rem;
+  margin-inline-start: auto;
+  width: fit-content;
+}
