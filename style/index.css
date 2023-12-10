@@ -15,7 +15,14 @@
 
 body {
   background-color: var(--white);
-  padding: 6rem 11rem;
-  max-width: 1440px;
+  padding: 0 1rem;
   margin-inline: auto;
+}
+
+@media (min-width: 768px) {
+  body {
+    padding: 6rem 11rem;
+    max-width: 1440px;
+    margin-inline: auto;
+  }
 }

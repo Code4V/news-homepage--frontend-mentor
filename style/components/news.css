@@ -60,6 +60,10 @@
   line-height: 1.75rem;
 }
 
+.news__content--mini {
+  margin-block-end: 0;
+}
+
 .news__content--dgb {
   color: var(--dark-grayish-blue);
 }

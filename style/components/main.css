@@ -1,6 +1,13 @@
 .main {
   display: flex;
   gap: 2rem;
+  flex-flow: column wrap;
 
   margin-block-end: 5rem;
+}
+
+@media (min-width: 768px) {
+  .main {
+    flex-flow: row nowrap;
+  }
 }

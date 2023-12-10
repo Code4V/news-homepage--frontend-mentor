@@ -1,7 +1,8 @@
 .articles {
   display:  grid;
-  grid-template-columns: repeat(3, 1fr);
   gap: 2rem;
+
+  margin-block-end: 4rem;
 }
 
 .articles__news {
@@ -14,3 +15,15 @@
   /* width: 80%; */
 }
 
+@media (min-width: 768px) {
+    
+  .articles {
+    grid-template-columns: repeat(3, 1fr);
+    gap: 2rem;
+  }
+
+  .articles__news {
+    grid-template-columns: 100px 225px;
+    gap: 1.5rem;
+  }
+}
