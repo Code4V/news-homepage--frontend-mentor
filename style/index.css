@@ -6,6 +6,7 @@
 @import url(./components/header.css);
 @import url(./components/news.css);
 @import url(./components/sidebar.css);
+@import url(./components/articles.css);
 
 :root {
   font-family: 'Inter';
@@ -13,5 +14,8 @@
 }
 
 body {
+  background-color: var(--white);
   padding: 6rem 11rem;
+  max-width: 1440px;
+  margin-inline: auto;
 }

@@ -1,0 +1,16 @@
+.articles {
+  display:  grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 2rem;
+}
+
+.articles__news {
+  display: grid;
+  grid-template-columns: 100px 225px;
+  gap: 1.5rem;
+}
+
+.articles__image {
+  /* width: 80%; */
+}
+

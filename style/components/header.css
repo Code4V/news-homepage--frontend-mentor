@@ -1,4 +1,5 @@
 @import url(./../abstract/colors.css);
+@import url(./../abstract/transitions.css);
 
 .header {
   flex: 0 1 1380px;
@@ -47,4 +48,11 @@
   letter-spacing: .25rem;
   margin-block-start: auto;
   width: 12.25rem;
+
+  transition: var(--transition-reg) background-color;
+}
+
+.header__button:hover  {
+  background-color: var(--very-dark-blue);
+  cursor: pointer;
 }

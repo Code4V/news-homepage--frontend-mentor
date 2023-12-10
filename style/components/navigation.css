@@ -1,3 +1,6 @@
+@import url(./../abstract/colors.css);
+@import url(./../abstract/transitions.css);
+
 .navigation {
   display: flex;
   width: 100%;
@@ -17,4 +20,13 @@
   gap: 2.65rem;
   margin-inline-start: auto;
   width: fit-content;
+}
+
+.navigation__nav li {
+  transition: var(--transition-reg) color;
+}
+.navigation__nav li:hover {
+  color: var(--red);
+
+  cursor: pointer;
 }

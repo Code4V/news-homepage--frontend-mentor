@@ -1,8 +1,13 @@
 @import url(./../abstract/colors.css);
+@import url(./../abstract/transitions.css);
 
 .news {
   color: var(--white);
   padding-block-start: .5rem;
+}
+
+.news--db {
+  color: var(--very-dark-blue);
 }
 
 .news:not(:last-child) {
@@ -14,14 +19,47 @@
   margin-block-end: 1rem;
 }
 
+.news__title,
+.news__title--small {
+  transition: var(--transition-reg) color;
+  cursor: pointer;
+}
+
+.news:hover .news__title {
+  color: var(--orange);
+  cursor: pointer;
+}
+
+.news:hover .news__title--small {
+  color: var(--red);
+}
+
+.news__number {
+  font-size: 2.15rem;
+  font-weight: 700;
+  line-height: 1rem;
+
+  color: var(--grayish-blue);
+  margin-block-end: 1.5rem;
+}
+
 .news__title {
   display: inline-block;
   font-size: 1.35rem;
   font-weight: 800;
 }
 
+
+.news__title--small {
+  font-size: 1.2rem;
+}
+
 .news__content {
   margin-block-end: 2rem;
   color: var(--grayish-blue);
   line-height: 1.75rem;
+}
+
+.news__content--dgb {
+  color: var(--dark-grayish-blue);
 }
