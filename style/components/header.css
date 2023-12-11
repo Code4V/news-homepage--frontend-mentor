@@ -1,15 +1,13 @@
 @import url(./../abstract/colors.css);
 @import url(./../abstract/transitions.css);
 
-.header {
-
-}
-
-
+/* .header {
+} */
 
 .header__banner {
   margin-block-end: 1.5rem;
 }
+
 
 .header__container {
   display: flex;
@@ -18,8 +16,12 @@
   flex-flow: column wrap;
 }
 
+.header__container * {
+  margin-block-end: 1.5rem;
+}
+
 .header__title {
-  font-size: 3.75rem;
+  font-size: 3rem;
   font-weight: 800;
 
   flex: 1 0 50%;
@@ -33,6 +35,8 @@
 .header__content {
   padding-block: 0 ;
   line-height: 1.5rem;
+
+  color: var(--dark-grayish-blue);
 }
 
 .header__button {
@@ -68,7 +72,15 @@
     flex-flow: row nowrap;
   }
 
+  .header__title {
+    font-size: 3.75rem;
+  }
+
   .header__container-inner {
     padding-inline: 1rem;
+  }
+
+  .header__container * {
+    margin-block-end: 0;
   }
 }

@@ -58,6 +58,7 @@
   margin-block-end: 2rem;
   color: var(--grayish-blue);
   line-height: 1.75rem;
+  padding-inline-end: .5rem;
 }
 
 .news__content--mini {
