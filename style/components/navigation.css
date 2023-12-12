@@ -1,6 +1,10 @@
 @import url(./../abstract/colors.css);
 @import url(./../abstract/transitions.css);
 
+:root {
+  --backdropDisplay: 'none'; 
+}
+
 .navigation {
   display: flex;
   width: 100%;
@@ -25,12 +29,16 @@
   z-index: 1;
 }
 
-.navigation__navgroup::before {
+.navigation::before {
   content: '';
-
+  display: var(--backdropDisplay);
+  position: fixed;
+  height: inherit;
   inset: 0;
-  background-color: var(--dark-grayish-blue);
+  background-color: var(--very-dark-blue);
+  opacity: .5;
 }
+
 
 .navigation__nav {
   display: flex;
@@ -46,11 +54,16 @@
 
 .navigation__buttons {
   display: block;
-
+  margin-inline-start: auto;
 }
 
 .navigation__buttons > svg {
   float: right;
+  transition: var(--transition-reg) fill;
+}
+
+.navigation__buttons > svg:hover {
+  fill: var(--red)
 }
 
 .navigation__nav li {
@@ -64,7 +77,7 @@
 }
 
 .navigation--show {
-  display: flex;
+  display: block;
 }
 
 .navigation--hidden {
